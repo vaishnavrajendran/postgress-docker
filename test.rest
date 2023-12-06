@@ -6,29 +6,32 @@ GET http://localhost:13000/createTodo
 
 ### 
 POST http://localhost:13000/insertUser/
-Content-Type: application/json
+content-type: application/json
+
 {
-"email": "vaishnv@gmail.com", "password": "helloo123"
+"email": "vaishnvraj@gmail.com", "password": "helloo123"
 }
 
 ### 
 POST http://localhost:13000/insertTodo/
-Content-Type: application/json
+content-type: application/json
+
 {
-"title": "Buy Cloths", "description": "Shorts", "user_id":"1", "done": false
+"title": "Buy Cloths again", "description": "Shorts", "user_id":"2", "done": false
 }
 
 ### 
 POST http://localhost:13000/getTodo/
-Content-Type: application/json
+content-type: application/json
+
 {
 "id":1
 }
 
 ### 
 POST http://localhost:13000/updateTodo/
-Content-Type: application/json
+content-type: application/json
+
 {
 "id":1, "done":true
 }
-
