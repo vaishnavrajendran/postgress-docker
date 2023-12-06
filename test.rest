@@ -1,0 +1,34 @@
+### 
+GET http://localhost:13000/createUser
+
+### 
+GET http://localhost:13000/createTodo
+
+### 
+POST http://localhost:13000/insertUser/
+Content-Type: application/json
+{
+"email": "vaishnv@gmail.com", "password": "helloo123"
+}
+
+### 
+POST http://localhost:13000/insertTodo/
+Content-Type: application/json
+{
+"title": "Buy Cloths", "description": "Shorts", "user_id":"1", "done": false
+}
+
+### 
+POST http://localhost:13000/getTodo/
+Content-Type: application/json
+{
+"id":1
+}
+
+### 
+POST http://localhost:13000/updateTodo/
+Content-Type: application/json
+{
+"id":1, "done":true
+}
+
